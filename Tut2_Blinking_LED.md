@@ -11,14 +11,14 @@ En este tutorial recibiras una programacion ya hecha de un Blinking LED (LED par
 
 1. conecta tu ESP8266 al computador por medio de un cable USB
 
-![](/images/ESP8266_serial.jpeg)
+![](/Images/ESP8266_serial.jpeg)
 
 2. Ve a **Herramientas** y selecciona el modelo de la placa (Board) que contiene tu  ESP. En este caso se trata de una Wemos D1 mini. Si tu placa no esta en el catalago selecciona "Generic ESP8266 module".
 Ademas en **Herramientas** debes seleccionar el COM port. En mi caso era COM port 8, puede variar el numero no te asustes.
 
-![](images/ArduinoIDE_choose_Boardt.PNG)
+![](Images/ArduinoIDE_choose_Boardt.PNG)
 
-3. Abre el archivo XXXXX o copia el siguiente codigo en tu Arduino IDE
+3. Copia el siguiente codigo en tu Arduino IDE
 
 ``` arduino
 /*********
@@ -34,8 +34,8 @@ Ademas en **Herramientas** debes seleccionar el COM port. En mi caso era COM por
 #include <ArduinoOTA.h>
 
 // Replace with your network credentials
-const char* ssid = "home_eva";
-const char* password = "Moritz2008";
+const char* ssid = "SSID";
+const char* password = "Contraseña";
 
 const int ESP_BUILTIN_LED = 2;
 
