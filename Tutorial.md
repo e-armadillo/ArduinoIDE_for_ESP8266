@@ -1,4 +1,4 @@
-# Tutorial para tu primer encedido/apagado de LED en el micro-controlador ESP8266
+# Tutorial instalacion ARduinoIDE para trabajar con el chip Esp8266 (contenido en Wemos)
 
 ## Que es un ESP8266?
 El microcontrolador ESP8266 (*Micro Control Unit MCU*) es una especie de mini computador, que contiene una unidad de Wifi, capacidades de microcontrolador, un LED y otras cosas.
@@ -24,38 +24,26 @@ Wemos D1 mini se puede conectar por medio de un adaptador directamente a un puer
 
 **Atencion**: ESP8266 trabaja en base a 3,3 Volts. Normalmente una coneccion USB libera alrededor de 5v. Para solucionar esto Wemos D1 mini contiene un adaptador de voltaje, de modo que al conectar Wemos por cable USB todo funciona sin problemas.
 ***
-## Installing the drive CH340 for recognition of the Wemos
 
-After conecting Wemos to your computer you will need to download a driver. Which will allow your computer to recognize WEMOS as a device. For that purpose go to the [documentation of WEmos](https://docs.wemos.cc/en/latest/d1/d1_mini.html) and scroll down and in the section **Documentation** click on the link CH340 Driver like in the image 
+## Instalando el driver Ch340g para que el computador reconozca a Wemos
+
+Despues de conectar wemos a tu computador necesitaras descargar el driver con la configuracion necesaria para que tu computador reconozca a wemos cuando es conectado via USB. Para este proposito puedes revisar la [documentacion de WEmos](https://docs.wemos.cc/en/latest/d1/d1_mini.html) desliza hacia abajo y en la seccion **Documentation** haz click en el link a CH340 Driver como en la imagen.
 
 ![](/images/Wemos_Driver_CH340.png)
 
-after downloading install it.
+una vez que este descargado, instálalo haciendo doble click sobre el archivo ejecutable (.exe) y sigue las instrucciones.
 
 ***
-## Selecting an Environment to code , compile and load to the ESP8266
+## Seleccionando un ambiente de desarrollo para programar y compilar tu ESP8266
 
-For running your fisrt led blinking on the WEMOS, it is recommended to work with an **Arduino Integrated DEvelopment Environment (Arduino IDE)**. Which is used to write an upload programs to *Arduino*. Although with some changes it allows us to write code, compile and charge on ESP8266 (contained in WEMOS).
+Te recomiendo iniciar tu proceso con el ambiente de desarrollo de arduino **Arduino Integrated DEvelopment Environment (Arduino IDE)**. Este ambiente se utiliza para cargar programas en el controlador *Arduino*. Sin embargo, con algunos cambios se puede adaptar para trabajar sin problemas con el ESpP8266 (contenido en WEMOS).
 
 
-First of all you need to download Arduino IDE from [Download here](https://www.arduino.cc/en/main/software).
+Lo primero que debes hacer es descargar arduino desde [Download here](https://www.arduino.cc/en/main/software).
 
 ![](/Images/Download_Arduino.png)
 
-after the download, install the file **.exe** and follow instructions.
+Una vez que este descargado, instala el archivo **-exe** y sigue las instrucciones.
 
-**OPTIONAL** you can try another IDE environment like *PlatformIO*
 
-***
-## Runing your first LED blinking 
-
-Once you downloaded the environment Arduino IDE you can follow the next short [youtube tutorial](https://www.youtube.com/watch?v=2DL8FlrBTDs).
-
-**NOTE:** Until now you have been able to run a led blinking on your device. Notwithstanding the code was loaded via USB-cable. In the next tutorial you will be able to load your code from the computer to your Wemos without any USB-cable. This is called **Over The Air (OTA)** and will be enorm usefull when your Wemos is for example into a case and you cannot access to it very easily.
-***
-
-## Cargando tu codigo a ESP8266 via OTA
-
-para cargar el codigo sigue el siguiente [tutorial](http://www.sinaptec.alomar.com.ar/2017/10/tutorial-21-esp8266-ota-carga-tu-sketch.html?fbclid=IwAR0veX9cDm_ICz-lFepof7djdhEdTSH_44nynMQP-5e70gGXCdlnqqYAB-4)
-
-puedes descargar el codigo de la misma pagina.
+**OPCIONAL** el desarrollo también se podría realizar con una alternativa de *Arduino IDE* llamada *PlatformIO*
