@@ -7,9 +7,7 @@ En esta carpeta encontraras toda la informacion necesaria para:
 * conectar tu ESP8266 al computador
 * **cargar tus codigos via OTA** (de modo inalambrico)
 
-Para ello dirígete al tutorial llamado **Tutorial.md**
-
-**NOTA** Parte del tutorial esta en inglés de ser necesario que se redacte la seccion unicamente en español, comentamelo
+Para ello realiza el tutorial llamado **Tut2_Blinking_LED.md** y luego **Tut3_Blinking_LED_OTA.md**
 
 saludos </br>
 Franco </br>
