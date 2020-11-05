@@ -4,7 +4,7 @@
 El microcontrolador ESP8266 (*Micro Control Unit MCU*) es una especie de mini computador, que contiene una unidad de Wifi, capacidades de microcontrolador, un LED y otras cosas.
 
 
-![ESP8266](/images/ESP8266.jpg)
+![ESP8266](/Images/ESP8266.jpg)
 ***
 
 ## ESP86 y placas que lo contienen como NodeMCU y Wemos D1 mini
