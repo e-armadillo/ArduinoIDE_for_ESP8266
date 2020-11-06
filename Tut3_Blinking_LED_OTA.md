@@ -4,7 +4,7 @@ Ahora que tu ESP8266 contiene el programa transferido puedes desconectar el cabl
 
 1. Ve a tu Arduino IDE > Tools > Port y selecciona la opcion esp8266-d77c at 192.168.1.105. Considera que la denominacion puede variar un poco debido a tu numero IP. Pero Sólo se trata de desmarcar el COM8 y establecer la ruta IP como medio deseado de transferencia.
 
-![](/Images/Tut3_Paso2.PNG)
+![](/images/Tut3_Paso2.PNG)
 
 2. Copia el siguiente codigo en tu Arduino IDE, ingresa tu SSID y tu Password.
 

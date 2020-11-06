@@ -3,6 +3,15 @@
 * primero que todo asegurate de tener instalado Python 2.7.12 o una version superior en tu computador. Si no lo tienes instalado, revisa [Aquí](https://www.python.org/downloads/) e instálalo
 * el siguiente tutorial es una adaptacion del trabajo realizado por Santos publicado [aqui](https://randomnerdtutorials.com/esp8266-ota-updates-with-arduino-ide-over-the-air/).
 
+## Instalando el driver Ch340g para que el computador reconozca a Wemos
+
+Despues de conectar wemos a tu computador necesitaras descargar el driver con la configuracion necesaria para que tu computador reconozca a wemos cuando es conectado via USB. Para este proposito puedes revisar la [documentacion de WEmos](https://docs.wemos.cc/en/latest/d1/d1_mini.html) desliza hacia abajo y en la seccion **Documentation** haz click en el link a CH340 Driver como en la imagen.
+
+![](/Images/Wemos_Driver_CH340.png)
+
+una vez que este descargado, instálalo haciendo doble click sobre el archivo ejecutable (.exe) y sigue las instrucciones.
+
+
 # Blinking led por medio de comunicacion serial (Cable)
 
 En este tutorial recibiras una programacion ya hecha de un Blinking LED (LED parpadeante) que será cargada por medio de un cable al ESP8266. El led utilizado viene incluido en el ESP8266 y por tanto en Wemos.
@@ -13,14 +22,24 @@ En este tutorial recibiras una programacion ya hecha de un Blinking LED (LED par
 
 ![](/Images/ESP8266_serial.jpeg)
 
-2. Ve a **Herramientas** y selecciona el modelo de la placa (Board) que contiene tu  ESP. En este caso se trata de una Wemos D1 mini. Si tu placa no esta en el catalago selecciona "Generic ESP8266 module".
+2.  En arduino IDE ve a archivo (setup)-> preferencias (preferences)
+
+![](/Images/2020-11-05-22-06-01.png)
+
+y agrega la siguiente linea, a continuacion presiona ok
+
+'''
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+'''
+
+2. Ve a **Herramientas** y selecciona el Board (modelo de placa)  que contiene tu  ESP. En este caso se trata de una Wemos D1 mini. Si tu placa no esta en el catalago selecciona "Generic ESP8266 module".
 Ademas en **Herramientas** debes seleccionar el COM port. En mi caso era COM port 8, puede variar el numero no te asustes.
 
 ![](Images/ArduinoIDE_choose_Boardt.PNG)
 
-3. Copia el siguiente codigo en tu Arduino IDE
+3. Copia el siguiente codigo en tu Arduino IDE y reemplaza el SSID por el nombre de tu red wifi y pon la contraseña 
 
-``` arduino
+``` {arduino}
 /*********
   Franco Perez
   trabajo en base a codigo de Rui Santos. 
